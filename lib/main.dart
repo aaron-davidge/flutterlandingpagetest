@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aaron Davidge | Software Engineer',
+      title: 'Transformers | Optimus Prime',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MyHomePage(),
-        '/Home': (context) => Home(),
+        '/Home': (context) => MyHomePage(),
         '/AboutMe': (context) => AboutMe(),
         '/Portfolio': (context) => Portfolio(),
         '/ContactMe': (context) => ContactMe(),
@@ -35,9 +35,9 @@ class  MyHomePage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue, Colors.green, Colors.yellow, Colors.red, Colors.blue
+              Color.fromRGBO(52, 79, 138, 1), Color.fromRGBO(146, 57, 54, 1),   Color.fromRGBO(201, 204, 207, 1)
               ],
-              stops: [0.0, 0.25, 0.5, 0.75, 1]
+              
           ),
         ),
            child: SingleChildScrollView(
@@ -64,9 +64,8 @@ class  Home extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue, Colors.green, Colors.yellow, Colors.red, Colors.blue
+              Color.fromRGBO(52, 79, 138, 1), Color.fromRGBO(146, 57, 54, 1),   Color.fromRGBO(201, 204, 207, 1)
               ],
-              stops: [0.0, 0.25, 0.5, 0.75, 1]
           ),
         ),
            child: SingleChildScrollView(
@@ -93,7 +92,7 @@ class  AboutMe extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue, Colors.green, Colors.yellow, Colors.blue
+              Color.fromRGBO(52, 79, 138, 1), Color.fromRGBO(146, 57, 54, 1),   Color.fromRGBO(201, 204, 207, 1)
               ],
               
           ),
@@ -122,7 +121,7 @@ class  Portfolio extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.blue, Colors.green, Colors.blue
+              Color.fromRGBO(52, 79, 138, 1), Color.fromRGBO(146, 57, 54, 1),   Color.fromRGBO(201, 204, 207, 1)
               ],  
           ),
         ),
@@ -149,9 +148,9 @@ class  ContactMe extends StatelessWidget {
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [
-              Colors.blue, Colors.blue
-              ],  
+            colors:[
+              Color.fromRGBO(52, 79, 138, 1), Color.fromRGBO(146, 57, 54, 1),   Color.fromRGBO(201, 204, 207, 1),
+            ],
           ),
         ),
            child: SingleChildScrollView(
